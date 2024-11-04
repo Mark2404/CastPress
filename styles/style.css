@@ -500,3 +500,73 @@ nav div a {
     margin-bottom: 20px;
     cursor: pointer;
 }
+
+
+/* ustoz */
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    transform: translateY(-100vh);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-mobile.active {
+    transform: translateY(0);
+}
+
+.menu-mobile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.menu-mobile__header .close {
+    cursor: pointer;
+}
+
+.menu-mobile nav {
+    height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.menu-mobile nav a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    header .menu-mobile {
+        display: block;
+    }
+
+
+    header .menu {
+        display: inline-block;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}

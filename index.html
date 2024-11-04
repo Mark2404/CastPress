@@ -15,31 +15,42 @@
         <nav class="container">
             <div class="nav-box">
                 <h5>Castpress.</h5>
-                <div class="nav-links">
-
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Episodes
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item active" href="./index.html">Home</a></li>
-                            <li><a class="dropdown-item" href="./pages/about.html">Episode Single</a></li>
-
-
-
-                        </ul>
+                <img class="menu" src="./assets/imgs/Menu.svg" alt="" />
+                <div class="menu-mobile">
+                    <div class="menu-mobile__header">
+                        <h2>Logo</h2>
+                        <img class="close" src="./assets/imgs/close-svg.svg" alt="" />
                     </div>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                    <div class="donate">
-                        <img src="./assets/icons/heart-icon.svg" alt="">
-                        <a href="#">Donate</a>
-                    </div>
-                    <img src="./assets/icons/search-icon.svg" alt="">
+                    <nav class="nav_mobile">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                    <div class="nav-links">
 
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Episodes
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="./index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="./pages/about.html">Episode Single</a></li>
+
+
+
+                            </ul>
+                        </div>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                        <div class="donate">
+                            <img src="./assets/icons/heart-icon.svg" alt="">
+                            <a href="#">Donate</a>
+                        </div>
+                        <img src="./assets/icons/search-icon.svg" alt="">
+
+                    </div>
                 </div>
-            </div>
         </nav>
     </header>
     <section class="pleyslist-sec">
@@ -262,7 +273,23 @@
 
 
 
+    <script>
+        const menu = document.querySelector(".menu");
+        const menuMobile = document.querySelector(".menu-mobile");
+        const close = document.querySelector(".close");
+        const img = document.querySelector("animated-img");
 
+        menu.addEventListener("click", () => {
+            menuMobile.classList.add("active");
+            document.body.style.overflow = "hidden";
+            img.classList.add("none");
+        });
+
+        close.addEventListener("click", () => {
+            menuMobile.classList.remove("active");
+            document.body.style.overflowY = "auto";
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
