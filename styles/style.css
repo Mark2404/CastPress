@@ -382,4 +382,96 @@ nav div a {
     font-size: 14px;
     text-transform: capitalize;
     color: #7247ca;
+    margin-bottom: 45px;
+}
+
+.footer-sec {
+    border-top: 3px solid #eaeaee;
+
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 45px;
+
+
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.footer-links a {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 179%;
+    color: #555;
+}
+
+.footer-input h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 9px;
+}
+
+.footer-input p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.footer-input .input input {
+    border-radius: 4px;
+    width: 315px;
+    height: 42px;
+    background: #f5f5f7;
+    border: none;
+    padding: 5px;
+    position: relative;
+
+}
+
+.footer-input .input {
+    position: relative;
+}
+
+.footer-input button {
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    background: #7247ca;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.footer-apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+.footer-apps div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
