@@ -13,6 +13,8 @@ body {
 
     font-family: 'Source serif 4';
     overflow-x: hidden;
+    cursor: url('../assets/icons/free-icon-tone-12153523.png'), auto;
+
 }
 
 p {
@@ -26,12 +28,12 @@ p {
     margin: 0 auto;
 }
 
+
 nav div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-
 
 }
 
@@ -499,4 +501,153 @@ nav div a {
     gap: 24px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+
+/* ustoz */
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    transform: translateY(-100vh);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-mobile.active {
+    transform: translateY(0);
+}
+
+.menu-mobile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+}
+
+.menu-mobile__header .close {
+    cursor: pointer;
+}
+
+.menu-mobile nav {
+    height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.menu-mobile nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .mb-container {
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    header .menu-mobile {
+        display: block;
+    }
+
+
+    header .menu {
+        display: inline-block;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    .mb-nav-links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .mb-player {
+        width: 100%;
+    }
+
+    .mb-pleylist-img h1 {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 123%;
+        text-align: center;
+        color: #222;
+    }
+
+    .mb-track-bar {
+        border-radius: 2px;
+        width: 146px;
+        height: 7px;
+    }
+
+    .mb-bar {
+        border-radius: 2px;
+        width: 21px;
+        height: 7px;
+    }
+
+    .mb-texts {
+        width: 100%;
+    }
+
+    .mb-Team-imgs-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mb-team-sec h1 {
+        margin-top: 30px;
+    }
+
+    .mb-lastnews {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+    }
+
+    .mb-footer-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-footer-links {
+        margin-bottom: 30px;
+    }
+
 }
