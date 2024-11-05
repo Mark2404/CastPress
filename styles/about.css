@@ -75,6 +75,10 @@ nav div a {
     border: none;
 }
 
+
+/*                        menu mobile  start                  */
+
+
 .nav-box .menu {
     display: none;
 }
@@ -144,6 +148,11 @@ nav div a {
 .dropdown:hover .submenu {
     display: block;
 }
+
+
+
+/*                            menu end                           */
+
 
 .hero-page {
     height: calc(100vh - 220px);
