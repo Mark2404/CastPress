@@ -1,263 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/about.css" />
     <title>CasstPress</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav class="container">
-        <div class="nav-box">
-          <h5>Castpress.</h5>
-          <div class="nav-links">
-            <div class="dropdown">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Episodes
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                <li>
-                  <a class="dropdown-item active" href="./about.html"
-                    >Episode Single</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <div class="donate">
-              <img src="../assets/icons/heart-icon.svg" alt="" />
-              <a href="#">Donate</a>
-            </div>
-            <img src="../assets/icons/search-icon.svg" alt="" />
-          </div>
+        <nav class="container">
+            <div class="nav-box">
+                <h5>Castpress.</h5>
+                <div class="nav-links">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Episodes
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                            <li>
+                                <a class="dropdown-item active" href="./about.html">Episode Single</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <div class="donate">
+                        <img src="../assets/icons/heart-icon.svg" alt="" />
+                        <a href="#">Donate</a>
+                    </div>
+                    <img src="../assets/icons/search-icon.svg" alt="" />
+                </div>
 
-          <!-- mobile-menu -->
+                <!-- mobile-menu -->
 
-          <img class="menu" src="../assets/icons/Menu.svg" alt="" />
-          <div class="menu-mobile">
-            <div class="menu-mobile__header">
-              <h5>Castpress.</h5>
-              <img class="close" src="../assets/icons/close.svg" alt="" />
+                <img class="menu" src="../assets/icons/Menu.svg" alt="" />
+                <div class="menu-mobile">
+                    <div class="menu-mobile__header">
+                        <h5>Castpress.</h5>
+                        <img class="close" src="../assets/icons/close.svg" alt="" />
+                    </div>
+                    <ul class="menu-list">
+                        <li class="dropdown">
+                            <a href="#" id="episodes-toggle">Episodes &#9662;</a>
+                            <ul class="submenu" id="episodes-menu">
+                                <li><a href="#">Season 1</a></li>
+                                <li><a href="#">Season 2</a></li>
+                                <li><a href="#">Season 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">&#9829; Donate</a></li>
+                    </ul>
+                </div>
+
+                <!-- mobile menu  end -->
             </div>
-            <ul class="menu-list">
-              <li class="dropdown">
-                <a href="#" id="episodes-toggle">Episodes &#9662;</a>
-                <ul class="submenu" id="episodes-menu">
-                  <li><a href="#">Season 1</a></li>
-                  <li><a href="#">Season 2</a></li>
-                  <li><a href="#">Season 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">&#9829; Donate</a></li>
-            </ul>
-          </div>
-
-          <!-- mobile menu  end -->
-        </div>
-      </nav>
+        </nav>
     </header>
     <main>
-      <section class="hero-page">
-        <div class="container">
-          <img
-            class="hero-page-img"
-            src="../assets/imgs/section1-img.svg"
-            alt=""
-          />
-          <h1>Makemeup Podcast Theme; launch it now!</h1>
-          <p>Episode 18 | jan 8, 2021 | By VitaThemes</p>
-          <div class="hero-page-music">
-            <img src="../assets/icons/pley-icon.svg" alt="" />
-            <p>00:00</p>
-            <div class="track-bar">
-              <div class="bar"></div>
+        <section class="hero-page">
+            <div class="container">
+                <img class="hero-page-img" src="../assets/imgs/section1-img.svg" alt="" />
+                <h1>Makemeup Podcast Theme; launch it now!</h1>
+                <p>Episode 18 | jan 8, 2021 | By VitaThemes</p>
+                <div class="hero-page-music">
+                    <img src="../assets/icons/pley-icon.svg" alt="" />
+                    <p>00:00</p>
+                    <div class="track-bar">
+                        <div class="bar"></div>
+                    </div>
+                    <p>02:45</p>
+                    <img src="../assets/icons/volume-icon.svg" alt="" />
+                    <img src="../assets/icons/dowload-icon.svg" alt="" />
+                </div>
+                <div class="hero-page-apps">
+                    <p>Listen on</p>
+                    <div class="apps">
+                        <img src="../assets/icons/spotyfy-icon.svg" alt="" />
+                        <img src="../assets/icons/soundcloud-icon.svg" alt="" />
+                        <img src="../assets/icons/apple-icon.svg" alt="" />
+                    </div>
+                </div>
             </div>
-            <p>02:45</p>
-            <img src="../assets/icons/volume-icon.svg" alt="" />
-            <img src="../assets/icons/dowload-icon.svg" alt="" />
-          </div>
-          <div class="hero-page-apps">
-            <p>Listen on</p>
-            <div class="apps">
-              <img src="../assets/icons/spotyfy-icon.svg" alt="" />
-              <img src="../assets/icons/soundcloud-icon.svg" alt="" />
-              <img src="../assets/icons/apple-icon.svg" alt="" />
+        </section>
+        <section class="text">
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                    sed mollis augue. Cras suscipit sit amet est in aliquam. In vel
+                    blandit nunc. Donec at dolor in orci tristique bibendum.Cras non
+                    interdum ligula, sit amet imperdiet purus. Vestibulum quis leo nibh.
+                </p>
+                <h3>Makemeup Podcast Theme</h3>
+                <p>
+                    Vivamus et aliquet neque. Mauris feugiat blandit augue a vestibulum.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos. Aliquam a luctus magna, a finibus massa.
+                    <br />
+                    Proin ultricies, arcu ac dignissim sollicitudin, nibh nibh fermentum
+                    eros, id consequat nisi odio vestibulum tortor. Cras non interdum
+                    ligula, sit amet imperdiet purus. Vestibulum quis leo nibh. Class
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Aliquam a luctus magna, a finibus massa.
+                </p>
+                <div class="text-content">
+                    <h4>
+                        Listening time: 86 minutes | View transcript
+                        <img class="arrow" src="../assets/icons/Arrow.svg" alt="" />
+                    </h4>
+                </div>
+                <div class="text-content2">
+                    <p>#Apple</p>
+                    <p>#Keynote</p>
+                    <p>#Product</p>
+                </div>
+                <div class="text-content3">
+                    <p>Share:</p>
+                    <div class="social-icons">
+                        <a href="htps://www.facebook.com"><img src="../assets/icons/facebook-icon.svg" alt="" /></a>
+                        <a href="htps://www.github.com"><img src="../assets/icons/github-icon.svg" alt="" /></a>
+                        <a href="htps://www.twitter.com"><img src="../assets/icons/twitter-icon.svg" alt="" /></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="text">
-        <div class="container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sed mollis augue. Cras suscipit sit amet est in aliquam. In vel
-            blandit nunc. Donec at dolor in orci tristique bibendum.Cras non
-            interdum ligula, sit amet imperdiet purus. Vestibulum quis leo nibh.
-          </p>
-          <h3>Makemeup Podcast Theme</h3>
-          <p>
-            Vivamus et aliquet neque. Mauris feugiat blandit augue a vestibulum.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-            per inceptos himenaeos. Aliquam a luctus magna, a finibus massa.
-            <br />
-            Proin ultricies, arcu ac dignissim sollicitudin, nibh nibh fermentum
-            eros, id consequat nisi odio vestibulum tortor. Cras non interdum
-            ligula, sit amet imperdiet purus. Vestibulum quis leo nibh. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Aliquam a luctus magna, a finibus massa.
-          </p>
-          <div class="text-content">
-            <h4>
-              Listening time: 86 minutes | View transcript
-              <img class="arrow" src="../assets/icons/Arrow.svg" alt="" />
-            </h4>
-          </div>
-          <div class="text-content2">
-            <p>#Apple</p>
-            <p>#Keynote</p>
-            <p>#Product</p>
-          </div>
-          <div class="text-content3">
-            <p>Share:</p>
-            <div class="social-icons">
-              <a href="htps://www.facebook.com"
-                ><img src="../assets/icons/facebook-icon.svg" alt=""
-              /></a>
-              <a href="htps://www.github.com"
-                ><img src="../assets/icons/github-icon.svg" alt=""
-              /></a>
-              <a href="htps://www.twitter.com"
-                ><img src="../assets/icons/twitter-icon.svg" alt=""
-              /></a>
+        </section>
+        <section class="posts">
+            <div class="container">
+                <h4>Related Posts</h4>
+                <div class="posts-cards">
+                    <img src="../assets/imgs/last-news-clock.svg" alt="" />
+                    <div class="posts-card-text">
+                        <h5>How to create your own podcast cover art?</h5>
+                        <p>Dec 4, 2019</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="posts-cards">
+                    <img src="../assets/imgs/last-new-earspuds.svg" alt="" />
+                    <div class="posts-card-text">
+                        <h5>How to create your own podcast cover art?</h5>
+                        <p>Dec 4, 2019</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="posts">
-        <div class="container">
-          <h4>Related Posts</h4>
-          <div class="posts-cards">
-            <img src="../assets/imgs/last-news-clock.svg" alt="" />
-            <div class="posts-card-text">
-              <h5>How to create your own podcast cover art?</h5>
-              <p>Dec 4, 2019</p>
-              <button>Read More</button>
+        </section>
+        <section class="reply">
+            <div class="container">
+                <h4>Leave a Reply</h4>
+                <p>Required fields are marked *</p>
+                <form action="" class="inputs">
+                    <label for="Comment">Comment</label>
+                    <textarea class="comment" name="Comment" id="Comment"></textarea>
+                    <label for="name">Name*</label>
+                    <input type="text" name="name" id="name" />
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" />
+                    <label for="website">Website*</label>
+                    <input type="text" name="website" id="website" />
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox" />
+                        <label for="checkbox">
+                            Save my name, email, and website in this browser for the next
+                            time I comment <a href="">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">
+                        Submit <img src="../assets/icons/Icon-color.svg" alt="" />
+                    </button>
+                </form>
             </div>
-          </div>
-          <div class="posts-cards">
-            <img src="../assets/imgs/last-new-earspuds.svg" alt="" />
-            <div class="posts-card-text">
-              <h5>How to create your own podcast cover art?</h5>
-              <p>Dec 4, 2019</p>
-              <button>Read More</button>
+        </section>
+        <section class="comments">
+            <div class="container">
+                <h4>Comments</h4>
+                <div class="comments-cards">
+                    <div class="comments-card">
+                        <img src="../assets/imgs/unsplash_1.svg" alt="" />
+                        <div class="comments-card-text">
+                            <div class="comments-card-text-top">
+                                <h6>Mark Newman</h6>
+                                <p>Oct 24.2020</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+                                aliquid vero repellat nihil qui ipsum accusamus excepturi
+                                expedita! A, doloremque.
+                            </p>
+                            <div class="comments-card-text-reply">
+                                <img src="../assets/icons/Vector.svg" alt="" />
+                                <p>Reply</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-card ikki">
+                        <img src="../assets/imgs/unsplash_2.svg" alt="" />
+                        <div class="comments-card-text">
+                            <div class="comments-card-text-top">
+                                <h6>Scarlet Withch</h6>
+                                <p>Oct 24.2020</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+                                aliquid vero repellat nihil qui ipsum accusamus excepturi
+                                expedita! A, doloremque.
+                            </p>
+                            <div class="comments-card-text-reply">
+                                <img src="../assets/icons/Vector.svg" alt="" />
+                                <p>Reply</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments-cards_uch">
+                    <div class="comments-card">
+                        <img src="../assets/imgs/unsplash_1.svg" alt="" />
+                        <div class="comments-card-text">
+                            <div class="comments-card-text-top">
+                                <h6>Mark Newman</h6>
+                                <p>Oct 24.2020</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+                                aliquid vero repellat nihil qui ipsum accusamus excepturi
+                                expedita! A, doloremque.
+                            </p>
+                            <div class="comments-card-text-reply">
+                                <img src="../assets/icons/Vector.svg" alt="" />
+                                <p>Reply</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="reply">
-        <div class="container">
-          <h4>Leave a Reply</h4>
-          <p>Required fields are marked *</p>
-          <form action="" class="inputs">
-            <label for="Comment">Comment</label>
-            <textarea class="comment" name="Comment" id="Comment"></textarea>
-            <label for="name">Name*</label>
-            <input type="text" name="name" id="name" />
-            <label for="email">Email*</label>
-            <input type="email" name="email" id="email" />
-            <label for="website">Website*</label>
-            <input type="text" name="website" id="website" />
-            <div class="checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox" />
-            <label for="checkbox"> Save my name, email, and website in this browser for the next time I comment  <a href="">Terms and Conditions</a> </label>
-            </div>
-            <button type="submit">Submit <img src="../assets/icons/Icon-color.svg" alt=""></button>
-          </form>
-          
-        </div>
-      </section>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-sec">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Episodes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-email">
+                    <h3>Newsletter</h3>
+                    <p>Sign up now; get closer to our action.</p>
+                    <div class="email-input-container">
+                        <input type="email" name="email" id="email" required placeholder="Email adress...">
+                        <button type="submit"><img src="../assets/icons/Arrow_3.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-apps">
+                <h5>PodcastTheme by VitaThemes | Privacy policy</h5>
+                <div class="apps">
+                    <img src="../assets/icons/facebook-icon.svg" alt="">
+                    <img src="../assets/icons/github-icon.svg" alt="">
+                    <img src="../assets/icons/twitter-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
-      const menu = document.querySelector(".menu");
-      const menuMobile = document.querySelector(".menu-mobile");
-      const close = document.querySelector(".close");
+        const menu = document.querySelector(".menu");
+        const menuMobile = document.querySelector(".menu-mobile");
+        const close = document.querySelector(".close");
 
-      menu.addEventListener("click", () => {
-        menuMobile.classList.add("active");
-        document.body.style.overflow = "hidden";
-      });
+        menu.addEventListener("click", () => {
+            menuMobile.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
 
-      close.addEventListener("click", () => {
-        menuMobile.classList.remove("active");
-        document.body.style.overflowY = "auto";
-      });
+        close.addEventListener("click", () => {
+            menuMobile.classList.remove("active");
+            document.body.style.overflowY = "auto";
+        });
     </script>
 
     <script>
-      document
-        .querySelector("form")
-        .addEventListener("submit", function (event) {
-          let isValid = true;
+        document
+            .querySelector("form")
+            .addEventListener("submit", function (event) {
+                let isValid = true;
 
-          // Majburiy maydonlar ro'yxati
-          const requiredFields = ["name", "email", "website"];
+                // Majburiy maydonlar ro'yxati
+                const requiredFields = ["name", "email", "website"];
 
-          requiredFields.forEach((fieldId) => {
-            const field = document.getElementById(fieldId);
+                requiredFields.forEach((fieldId) => {
+                    const field = document.getElementById(fieldId);
 
-            // Agar maydon bo'sh bo'lsa, borderni qizil qilish
-            if (!field.value.trim()) {
-              field.style.borderColor = "red";
-              isValid = false;
-            } else {
-              field.style.borderColor = "#ccc"; // Bo'sh emas bo'lsa, default rangga qaytarish
-            }
-          });
+                    // Agar maydon bo'sh bo'lsa, borderni qizil qilish
+                    if (!field.value.trim()) {
+                        field.style.borderColor = "red";
+                        isValid = false;
+                    } else {
+                        field.style.borderColor = "#ccc"; // Bo'sh emas bo'lsa, default rangga qaytarish
+                    }
+                });
 
-          // Agar formda xatolik bo'lsa, formani yubormaslik
-          if (!isValid) {
-            event.preventDefault();
-            alert("Please fill out all required fields.");
-          }
-        });
+                // Agar formda xatolik bo'lsa, formani yubormaslik
+                if (!isValid) {
+                    event.preventDefault();
+                    alert("Please fill out all required fields.");
+                }
+            });
     </script>
 
     <!-- mobile dropdown script -->
 
     <script>
-      const episodesToggle = document.getElementById("episodes-toggle");
-      const episodesMenu = document.getElementById("episodes-menu");
+        const episodesToggle = document.getElementById("episodes-toggle");
+        const episodesMenu = document.getElementById("episodes-menu");
 
-      episodesToggle.addEventListener("click", (event) => {
-        event.preventDefault();
-        episodesMenu.style.display =
-          episodesMenu.style.display === "block" ? "none" : "block";
-      });
+        episodesToggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            episodesMenu.style.display =
+                episodesMenu.style.display === "block" ? "none" : "block";
+        });
     </script>
 
     <!-- mobile dropdown script end -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
