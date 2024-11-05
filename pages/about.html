@@ -36,6 +36,9 @@
                     </div>
                     <img src="../assets/icons/search-icon.svg" alt="" />
                 </div>
+
+<!-- mobile-menu -->
+
                 <img class="menu" src="../assets/icons/Menu.svg" alt="" />
                 <div class="menu-mobile">
                     <div class="menu-mobile__header">
@@ -56,6 +59,9 @@
                         <li><a href="#">&#9829; Donate</a></li>
                     </ul>
                 </div>
+
+<!-- mobile menu  end -->
+ 
             </div>
         </nav>
     </header>
@@ -102,16 +108,16 @@
             document.body.style.overflowY = "auto";
         });
     </script>
+
+    // mobile-dropdown-script
     <script>
         const episodesToggle = document.getElementById('episodes-toggle');
         const episodesMenu = document.getElementById('episodes-menu');
 
         episodesToggle.addEventListener('click', (event) => {
             event.preventDefault();
-            // Episodes menyusi ko'rinadigan yoki yashirin bo'lishini boshqarish
             episodesMenu.style.display = episodesMenu.style.display === 'block' ? 'none' : 'block';
         });
-
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
