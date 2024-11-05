@@ -324,6 +324,64 @@ nav div a {
   color: #555555;
 }
 
+.posts {
+    padding: 50px 40px;
+}
+.posts .posts-cards:nth-child(3){
+    padding-bottom: 48px;
+    border-bottom: 1px solid #EAEAEE;
+   
+}
+.posts h4 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    color: #222;
+    margin-bottom: 17px;
+}
+.posts-cards {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.posts-cards .posts-card-text h5{
+font-size: 21px;
+font-weight: 600;
+line-height: 25px;
+text-align: left;
+margin-bottom: 16px;
+
+}
+.posts-cards .posts-card-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.54px;
+    text-align: left;
+    color: #979797;
+    margin-bottom: 40px;
+}
+.posts-card-text button {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.04px;
+    text-align: left;
+    color: #7247CA;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 16px;
+}
+.posts-card-text button:focus {
+    outline: none; 
+}
+.posts-card-text button:hover {
+    border: none;
+}
+
+
 @media (max-width: 500px) {
   header {
     padding: 10px 30px;
