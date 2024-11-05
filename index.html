@@ -12,57 +12,59 @@
 
 <body>
     <header>
-        <nav class="container">
+        <nav class="container mb-container">
             <div class="nav-box">
                 <h5>Castpress.</h5>
                 <img class="menu" src="./assets/imgs/Menu.svg" alt="" />
                 <div class="menu-mobile">
                     <div class="menu-mobile__header">
-                        <h2>Logo</h2>
+                        <h2>Castpress</h2>
                         <img class="close" src="./assets/imgs/close-svg.svg" alt="" />
                     </div>
                     <nav class="nav_mobile">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
+                        <a href="./index.html">Home</a>
+                        <a href="./pages/about.html">Single page</a>
+
                     </nav>
-                    <div class="nav-links">
 
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Episodes
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item active" href="./index.html">Home</a></li>
-                                <li><a class="dropdown-item" href="./pages/about.html">Episode Single</a></li>
-
-
-
-                            </ul>
-                        </div>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                        <div class="donate">
-                            <img src="./assets/icons/heart-icon.svg" alt="">
-                            <a href="#">Donate</a>
-                        </div>
-                        <img src="./assets/icons/search-icon.svg" alt="">
-
-                    </div>
                 </div>
+                <div class="nav-links mb-nav-links">
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Episodes
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item active" href="./index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="./pages/about.html">Episode Single</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <div class="donate">
+                        <img src="./assets/icons/heart-icon.svg" alt="">
+                        <a href="#">Donate</a>
+                    </div>
+                    <img src="./assets/icons/search-icon.svg" alt="">
+
+                </div>
+            </div>
         </nav>
     </header>
-    <section class="pleyslist-sec">
-        <div class="pleylist-img">
+    <section class="pleyslist-sec mb-container">
+        <div class="pleylist-img mb-pleylist-img">
             <img class="animated-img" src="./assets/imgs/section1-img.svg" alt="">
             <h1>How to rapidly test any experience!</h1>
         </div>
-        <div class="pleyer-sec">
+        <div class="pleyer-sec mb-player">
             <img src="./assets/icons/pley-icon.svg" alt="">
             <p>00:00</p>
-            <div class="track-bar">
-                <div class="bar"></div>
+            <div class="track-bar mb-track-bar">
+                <div class="bar mb-bar"></div>
             </div>
             <p>02:45</p>
             <img src="./assets/icons/volume-icon.svg" alt="">
@@ -81,8 +83,8 @@
 
 
     </section>
-    <section class="texts-sec container">
-        <div class="texts">
+    <section class="texts-sec container mb-container">
+        <div class="texts mb-texts">
             <div class="sec-bc">
 
                 <div class="text-with-bc">
@@ -102,7 +104,7 @@
 
             </div>
         </div>
-        <div class="texts">
+        <div class="texts mb-texts">
             <div class="sec-bc">
 
                 <div class="text-with-bc">
@@ -122,7 +124,7 @@
 
             </div>
         </div>
-        <div class="texts">
+        <div class="texts mb-texts">
             <div class="sec-bc">
 
                 <div class="text-with-bc">
@@ -163,9 +165,9 @@
 
         </div>
     </section>
-    <section class="container team-sec">
+    <section class="container team-sec mb-container mb-team-sec">
         <h1>Team</h1>
-        <div class="Team-imgs-sec">
+        <div class="Team-imgs-sec mb-Team-imgs-sec">
             <div class="imgs">
                 <img src="./assets/imgs/team-img1.svg" alt="">
                 <div class="imgs-info">
@@ -198,9 +200,9 @@
 
         </div>
     </section>
-    <section class="last-news-sec container">
+    <section class="last-news-sec container mb-container">
         <h1>Latest Posts</h1>
-        <div class="last-news">
+        <div class="last-news mb-lastnews">
             <img src="./assets/imgs/last-news-clock.svg" alt="">
             <div class="last-news-text">
                 <h5>How to create your own podcast cover art?</h5>
@@ -210,7 +212,7 @@
             </div>
 
         </div>
-        <div style="margin-bottom: 45px;" class="last-news">
+        <div style="margin-bottom: 45px;" class="last-news mb-lastnews">
             <img src="./assets/imgs/last-new-earspuds.svg" alt="">
             <div class="last-news-text">
                 <h5>How to create your own podcast cover art?</h5>
@@ -219,14 +221,14 @@
 
             </div>
 
+            <a class="news-btn" href="#">View Blog ></a>
         </div>
-        <a class="news-btn" href="#">View Blog ></a>
 
     </section>
-    <footer class="container">
-        <div class="footer-sec">
+    <footer class="container mb-container">
+        <div class="footer-sec mb-footer-sec">
 
-            <div class="footer-links">
+            <div class="footer-links mb-footer-links">
                 <a href="#">Episodes</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
@@ -277,17 +279,20 @@
         const menu = document.querySelector(".menu");
         const menuMobile = document.querySelector(".menu-mobile");
         const close = document.querySelector(".close");
-        const img = document.querySelector("animated-img");
+        const animatedImg = document.querySelector(".animated-img");
+
 
         menu.addEventListener("click", () => {
             menuMobile.classList.add("active");
             document.body.style.overflow = "hidden";
-            img.classList.add("none");
+            animatedImg.classList.add("hidden");
+
         });
 
         close.addEventListener("click", () => {
             menuMobile.classList.remove("active");
             document.body.style.overflowY = "auto";
+            animatedImg.classList.remove("hidden");
         });
     </script>
 
