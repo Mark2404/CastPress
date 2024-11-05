@@ -404,7 +404,7 @@ nav div a {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  border-bottom: 1px solid #EAEAEE;
+  border-bottom: 1px solid #eaeaee;
   padding-bottom: 60px;
 }
 .inputs input,
@@ -470,20 +470,112 @@ nav div a {
 }
 
 .inputs button {
-display: flex;
-align-items: center;
-gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: 17.54px;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #7247ca;
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
   cursor: pointer;
   outline: none;
+}
+
+.comments {
+  padding: 50px 40px;
+}
+.comments h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #222222;
+  margin-bottom: 35px;
+}
+.comments-cards {
+    border-bottom: 1px solid #EAEAEE;
+}
+.comments-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 40px;
+  
+}
+.comments-card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.54px;
+  text-align: left;
+  color: #979797;
+}
+.comments-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comments-card-text-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.comments-card-text-top h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.54px;
+  text-align: left;
+  color: #555555;
+  margin: none;
+}
+.comments-card-text-top p {
+    margin-bottom: 8px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.54px;
+  text-align: left;
+  color: #979797;
+}
+
+.comments-card-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #979797;
+}
+
+.comments-card-text-reply {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 40px;
+  line-height: 17.54px;
+  text-align: left;
+  color: #7247ca;
+  border: none;
+  background: none;
+  margin-top: 16px;
+}
+
+.comments-card-text-reply img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.ikki {
+  margin-left: 75px;
+}
+
+.comments-cards_uch {
+    margin-top: 50px;
 }
 
 @media (max-width: 500px) {
