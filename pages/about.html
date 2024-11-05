@@ -136,47 +136,60 @@
           <div class="text-content3">
             <p>Share:</p>
             <div class="social-icons">
-                <a href="htps://www.facebook.com"><img src="../assets/icons/facebook-icon.svg" alt="" /></a>
-                <a href="htps://www.github.com"><img src="../assets/icons/github-icon.svg" alt="" /></a>
-                <a href="htps://www.twitter.com"><img src="../assets/icons/twitter-icon.svg" alt="" /></a>
+              <a href="htps://www.facebook.com"
+                ><img src="../assets/icons/facebook-icon.svg" alt=""
+              /></a>
+              <a href="htps://www.github.com"
+                ><img src="../assets/icons/github-icon.svg" alt=""
+              /></a>
+              <a href="htps://www.twitter.com"
+                ><img src="../assets/icons/twitter-icon.svg" alt=""
+              /></a>
             </div>
           </div>
         </div>
       </section>
       <section class="posts">
         <div class="container">
-            <h4>Related Posts</h4>
-            <div class="posts-cards">
-                <img src="../assets/imgs/last-news-clock.svg" alt="">
-                <div class="posts-card-text">
-                    <h5>How to create your own podcast cover art?</h5>
-                    <p>Dec 4, 2019</p>
-                    <button>Read More</button>
-                </div>
+          <h4>Related Posts</h4>
+          <div class="posts-cards">
+            <img src="../assets/imgs/last-news-clock.svg" alt="" />
+            <div class="posts-card-text">
+              <h5>How to create your own podcast cover art?</h5>
+              <p>Dec 4, 2019</p>
+              <button>Read More</button>
             </div>
-            <div class="posts-cards">
-                <img src="../assets/imgs/last-new-earspuds.svg" alt="">
-                <div class="posts-card-text">
-                    <h5>How to create your own podcast cover art?</h5>
-                    <p>Dec 4, 2019</p>
-                    <button>Read More</button>
-                </div>
+          </div>
+          <div class="posts-cards">
+            <img src="../assets/imgs/last-new-earspuds.svg" alt="" />
+            <div class="posts-card-text">
+              <h5>How to create your own podcast cover art?</h5>
+              <p>Dec 4, 2019</p>
+              <button>Read More</button>
             </div>
+          </div>
         </div>
       </section>
       <section class="reply">
         <div class="container">
-            <h4>Leave a reply</h4>
-            <p>Your email address will not be published. Required fields are marked *</p>
-            <form action="1">
-                <label for="name" >Name*</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="email">
-                <label for="message">Message*</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <button type="submit">Submit</button>
-            </form>
+          <h4>Leave a Reply</h4>
+          <p>Required fields are marked *</p>
+          <form action="" class="inputs">
+            <label for="Comment">Comment</label>
+            <textarea class="comment" name="Comment" id="Comment"></textarea>
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" />
+            <label for="website">Website*</label>
+            <input type="text" name="website" id="website" />
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"> Save my name, email, and website in this browser for the next time I comment  <a href="">Terms and Conditions</a> </label>
+            </div>
+            <button type="submit">Submit <img src="../assets/icons/Icon-color.svg" alt=""></button>
+          </form>
+          
         </div>
       </section>
     </main>
@@ -195,6 +208,35 @@
         menuMobile.classList.remove("active");
         document.body.style.overflowY = "auto";
       });
+    </script>
+
+    <script>
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          let isValid = true;
+
+          // Majburiy maydonlar ro'yxati
+          const requiredFields = ["name", "email", "website"];
+
+          requiredFields.forEach((fieldId) => {
+            const field = document.getElementById(fieldId);
+
+            // Agar maydon bo'sh bo'lsa, borderni qizil qilish
+            if (!field.value.trim()) {
+              field.style.borderColor = "red";
+              isValid = false;
+            } else {
+              field.style.borderColor = "#ccc"; // Bo'sh emas bo'lsa, default rangga qaytarish
+            }
+          });
+
+          // Agar formda xatolik bo'lsa, formani yubormaslik
+          if (!isValid) {
+            event.preventDefault();
+            alert("Please fill out all required fields.");
+          }
+        });
     </script>
 
     <!-- mobile dropdown script -->
